@@ -17,25 +17,25 @@
     <title>Quest</title>
   </head>
   <body>
-    <header>
-      <h1>Quests</h1>
+    <header class="header">
+      <h1>Side Quests</h1>
     </header>
 
-    <form>
-      <input type="text" class="todo-input" />
-      <button class="todo-button" type="submit">
+    <form class="todo__form">
+      <input type="text" class="todo__input" />
+      <button class="todo__button" type="submit">
         <i class="fas fa-plus-square"></i>
       </button>
       <div class="select">
-        <select name="todos" class="filter-todo">
+        <select name="todos" class="todo__filter">
           <option value="all">All</option>
           <option value="completed">Completed</option>
           <option value="incomplete">Incomplete</option>
         </select>
       </div>
     </form>
-    <div class="todo-container">
-      <ul class="todo-list"></ul>
+    <div class="todo__container">
+      <ul class="todo__list"></ul>
     </div>
 
     <script src="./app.js"></script>

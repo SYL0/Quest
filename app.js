@@ -1,8 +1,8 @@
 // Selectors
-const todoInput = document.querySelector(".todo-input");
-const todoButton = document.querySelector(".todo-button");
-const todoList = document.querySelector(".todo-list");
-const filterOption = document.querySelector(".filter-todo");
+const todoInput = document.querySelector(".todo__input");
+const todoButton = document.querySelector(".todo__button");
+const todoList = document.querySelector(".todo__list");
+const filterOption = document.querySelector(".todo__filter");
 
 // Event Listeners
 document.addEventListener("DOMContentLoaded", getTodos);
