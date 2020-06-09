@@ -1,3 +1,8 @@
+$background: #28118b, #00c1d3;
+$secondary-color: #0076d9;
+$complete-color: #009cde;
+$trash-color: #28118b;
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +10,7 @@
 }
 
 body {
-  background: linear-gradient(120deg, #28118b, #00c1d3);
+  background: linear-gradient(120deg, $background);
   color: white;
   font-family: "Roboto", sans-serif;
   min-height: 100vh;
@@ -23,7 +28,14 @@ body {
   align-items: center;
 }
 
-.todo__form input,
+.todo__form input {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+
+  outline: none;
+}
 .todo__form button {
   padding: 0.5rem;
   font-size: 2rem;
@@ -32,14 +44,14 @@ body {
 }
 
 .todo__form button {
-  color: #d88771;
+  color: $secondary-color;
   background: white;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .todo__form button:hover {
-  background: #d88771;
+  background: $secondary-color;
   color: white;
 }
 
@@ -69,7 +81,7 @@ body {
 }
 .trash-btn,
 .complete-btn {
-  background: #ff6f47;
+  background: $trash-color;
   color: white;
   border: none;
   padding: 1rem;
@@ -77,7 +89,7 @@ body {
   font-size: 1rem;
 }
 .complete-btn {
-  background: rgb(47, 177, 47);
+  background: $complete-color;
 }
 .todo-item {
   padding: 0rem 0.5rem;
@@ -110,7 +122,7 @@ select {
   overflow: hidden;
 }
 select {
-  color: #ff6f47;
+  color: $secondary-color;
   width: 10rem;
   cursor: pointer;
   padding: 1rem;
@@ -118,15 +130,14 @@ select {
 .select::after {
   content: "\25BC";
   position: absolute;
-  background: #ff6f47;
+  background: $secondary-color;
   top: 0;
   right: 0;
   padding: 1rem;
   pointer-events: none;
   transition: all 0.3s ease;
 }
-
 .select:hover::after {
   background: white;
-  color: #ff6f47;
+  color: $secondary-color;
 }
